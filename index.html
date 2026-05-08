@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Biology Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <div id="start-screen" class="screen">
+            <h2>🖼Квіз з Minecraft🖼️</h2>
+            <p>Готовий перевірити свої знання?</p>
+            <button id="start-btn">Почати</button>
+        </div>
+
+        <div id="quiz-screen" class="screen hide">
+            <div class="header">
+                <span id="timer">Час: 15</span>
+                <span id="score-display">Бали: 0</span>
+            </div>
+            <h2 id="question-text">Запитання</h2>
+            <div id="answers-container"></div>
+        </div>
+
+        <div id="result-screen" class="screen hide">
+            <h2>Квіз завершено!</h2>
+            <p class="result-text"></p>
+            <p>Твій рахунок: <span id="final-score">0</span></p>
+            <button id="restart-btn">Спробувати ще</button>
+        </div>
+    </div>
+    
+    <div id="money-container"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+
